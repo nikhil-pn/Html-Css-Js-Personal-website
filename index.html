@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nikhil PN</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="module"></script>
   </head>
   <body>
     <div class="container">
       <div id="profile">
         <img width="200px" src="./Nikhil Photo.jpg" />
-        <h1>Hey i'm Nikhil- A BlockChain Developer</h1>
+        <h1>
+          Hey i'm Nikhil -
+          <span id="dynamic-content"></span>
+        </h1>
       </div>
 
       <p>As a tech enthusiastic i love exploring new gadgets and Cool Apps</p>
@@ -22,7 +26,7 @@
         <li>Bcom Finance and Taxation</li>
         <li>Commerce Computer Application</li>
       </ol>
-      <h2>Hobbies</h2>
+      <h2 id="hobby">Hobbies</h2>
       <ol>
         <ul>
           Making Youtube Video
@@ -42,8 +46,10 @@
       </ol>
       <hr />
       <h2>Connect with Me</h2>
-      <a href="http://twitter.com/nikhileth" target="_blank">twitter</a>
-      <a href="https://linkedin.com/in/nikhilpn" target="_blank">Linkden</a>
+      <div id="linktag">
+        <a href="http://twitter.com/nikhileth" target="_blank">twitter</a>
+        <a href="https://linkedin.com/in/nikhilpn" target="_blank">Linkden</a>
+      </div>
 
       <h2>Technologies</h2>
       <table>
