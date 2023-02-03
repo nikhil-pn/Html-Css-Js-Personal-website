@@ -16,6 +16,9 @@ nav > a{
   padding-top: 15px
 
 }
+nav > a{
+  margin-right: revert;
+}
 nav{
   text-align: center;
   padding: 6px;
@@ -59,4 +62,23 @@ table {
 
 #dynamic-content {
   color: royalblue;
+}
+#menu{
+  z-index: 2;
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+
+}
+#menudiv{
+  position: relative;
+}
+@media screen and (max-width: 450px) {
+  nav{
+    display: none;
+  }
+  #menu{
+    display: revert
+  }
 }
