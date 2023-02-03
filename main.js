@@ -1,6 +1,7 @@
 let list = ["BlockChain Developer", "SDE", "EnterPrenuer"];
 let typeWriter = document.getElementById("dynamic-content");
 
+
 let letterIndex = 0;
 let phraseIndex = 0;
 
