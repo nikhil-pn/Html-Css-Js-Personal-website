@@ -26,6 +26,7 @@ nav{
 }
 h2{
   color: grey;
+  text-align: center;
 }
 
 .container {
@@ -66,13 +67,38 @@ table {
 #menu{
   z-index: 2;
   display: none;
-  position: absolute;
+  position: fixed;
   right: 16px;
   top: 16px;
 
 }
 #menudiv{
-  position: relative;
+  position: fixed;
+  z-index: 3;
+  background: transparent;
+}
+#mobile-nav{
+  display: none;
+  height: 150px;
+  width: 300px;
+  background-color: black;
+  margin: auto;
+  padding-top: 10px;
+  
+}
+#mobile-nav > ul > li > a{
+  text-decoration: none;
+  
+  
+}
+#mobile-nav  ul {
+  list-style-type: none;
+  
+}
+#mobile-nav  ul li {
+  list-style-type: none;
+  margin-bottom: 4px;
+  
 }
 @media screen and (max-width: 450px) {
   nav{
@@ -80,5 +106,14 @@ table {
   }
   #menu{
     display: revert
+  }
+  #mobile-nav{
+    display: none;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    margin: auto;
+    padding-top: 10px;
+    
   }
 }
