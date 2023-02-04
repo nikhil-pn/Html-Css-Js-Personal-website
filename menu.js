@@ -4,6 +4,7 @@ const closeButton = document.querySelector("  #close-button");
 
 menuButton.addEventListener("click", (event) => {
   event.stopPropagation();
+
   console.log("click");
   console.log(mobileNav.style.display);
   if (mobileNav.style.display == "") {
@@ -19,6 +20,7 @@ closeButton.addEventListener("click", (event) => {
   mobileNav.style.display = "none";
 });
 
+//click outside the mobile nav will close the navigation bar
 document.addEventListener("click", (event) => {
   if (!mobileNav.contains(event.target)) {
     mobileNav.style.display = "none";

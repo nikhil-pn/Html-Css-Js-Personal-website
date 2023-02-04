@@ -1,11 +1,13 @@
 html {
   scroll-behavior: smooth;
+
 }
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
 nav {
+  margin-top: -5px;
   background-color: grey;
 }
 nav > a {
@@ -68,8 +70,15 @@ table {
   position: fixed;
   right: 16px;
   top: 16px;
+  transition-property: transform;
+  transition-duration: 0.4s;
+  /* transition-delay: 400ms; */
+}
+#menu:hover{
+  transform: scale(1.1);
 }
 #menudiv {
+  display: none;
   position: fixed;
   z-index: 3;
   background: transparent;
@@ -118,6 +127,9 @@ table {
     padding-top: 10px;
   }
   #close-button{
+    display: revert;
+  }
+  #menudiv{
     display: revert;
   }
 }
